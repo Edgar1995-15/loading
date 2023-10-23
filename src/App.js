@@ -6,8 +6,8 @@ function App() {
     <div className="logo-container">
       <span className="cut-wrapper">
         <div class="circle-container">
+          <span className="chunks"></span>
           <span className="border-bold">
-            <span className="chunks"></span>
             <span className="logo-shadow"></span>
           </span>
         </div>
