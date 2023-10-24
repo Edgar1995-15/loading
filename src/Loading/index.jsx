@@ -20,6 +20,8 @@ const Loading = () => {
   useEffect(() => {
     const radar = () => {
       const radius = 150;
+      const dotWrapper = document.getElementById("dot-wrapper");
+  
       for (let i = 0; i < dotes.length; i++) {
         const disX =
           90 < dotes[i].angle + 90 < 270 ? radius - dotes[i].distance : radius;
@@ -35,19 +37,20 @@ const Loading = () => {
           dotes[i].distance -
           Math.round(dotes[i].distance * Math.sin(angleNew));
         const delay = (time / 360) * dotes[i].angle;
-
+  
         const dotElement = document.createElement("span");
         dotElement.classList.add("dot");
         dotElement.style.left = `${getDegX}px`;
         dotElement.style.top = `${getDegY}px`;
         dotElement.style.animationDelay = `${delay}s`;
         dotElement.dataset.atDeg = dotes[i].angle;
-        document.getElementById("guides").appendChild(dotElement);
-
-        document.getElementById("radar").classList.add("animated");
+        
+        dotWrapper.appendChild(dotElement);
       }
+  
+      document.getElementById("radar").classList.add("animated");
     };
-
+  
     radar();
   }, [dotes]);
 
@@ -59,6 +62,7 @@ const Loading = () => {
           <div id="guides">
             <img src={logo} alt="Live Vegas" className="logo-live" />
             <div className="line"></div>
+            <div id="dot-wrapper"></div>
           </div>
         </span>
       </div>
