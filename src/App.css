@@ -16,7 +16,7 @@ body {
 }
 .border-bold {
   position: absolute;
-  background-image: url('./assets/shadow.svg');
+  background-image: url("./assets/shadow.svg");
   animation: rotate 3s linear infinite;
   background-size: contain;
   width: inherit;
@@ -41,9 +41,9 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/4.svg');
+  background-image: url("./assets/4.svg");
   background-size: contain;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   z-index: 2;
@@ -52,16 +52,14 @@ body {
 .chunks {
   position: absolute;
   z-index: 10;
-  width: 60%;
-  height: 30%;
-  background-image: url('./assets/smallItems.svg');
-  background-size: cover;
+  width: 80%;
+  height: 80%;
+  background-image: url("./assets/smallItems.svg");
+  background-size: contain;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  animation: followLogoShadow 1s linear infinite, lightingEffect 1s alternate infinite;
 }
-
 
 .cut-wrapper {
   width: 275px;
@@ -74,25 +72,11 @@ body {
   overflow: hidden;
 }
 
-
-
 @keyframes rotate {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes lightingEffect {
-  0%  {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.3;
+    transform: rotate(360deg);
   }
 }
