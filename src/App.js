@@ -11,8 +11,6 @@ function App() {
             <span className="logo-shadow"></span>
           </span>
         </div>
-        <span className="small-items"></span>
-
         <img src={logo} alt="Live Vegas" className="logo-live" />
       </span>
     </div>
