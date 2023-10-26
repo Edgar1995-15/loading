@@ -1,7 +1,7 @@
 import "./App.css";
 // import Loading from "./Loading";
 import logo from "./assets/logo.png";
-import example from "./assets/example.mp4";
+import example from "./assets/example-optimize.mp4";
 
 function App() {
   return (
