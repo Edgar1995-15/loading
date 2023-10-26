@@ -1,6 +1,6 @@
 import "./App.css";
 // import Loading from "./Loading";
-import logo from "./assets/logo.png";
+import logo from "./assets/logo1.png";
 import example from "./assets/example-optimize.mp4";
 
 function App() {
