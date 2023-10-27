@@ -46,7 +46,6 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: 2;
-  opacity: 0.8;
   animation: rotate 3s linear infinite;
   clip-path: polygon(50% 18.99%, 50% 46.37%, 100% 22.74%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 22.74%, 50% 46.37%);
    }
