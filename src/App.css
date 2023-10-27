@@ -48,8 +48,8 @@ body {
   z-index: 2;
   animation: rotate 3s linear infinite;
   opacity: 0.85;
-  clip-path: polygon(50% 34.18%, 60.87% 31.69%, 100% 22.74%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 22.74%, 39.13% 31.69%);
-     }
+  clip-path: polygon(50% 18.99%, 50% 46.37%, 100% 22.74%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 22.74%, 50% 46.37%);
+   }
 .border-shadow {
   position: absolute;
   width: 100%;
