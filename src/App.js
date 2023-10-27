@@ -1,35 +1,18 @@
 import "./App.css";
-// import Loading from "./Loading";
-// import logo from "./assets/logo1.png";
-import example from "./assets/22mp.mp4";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
     <>
       <div className="logo-container">
-            <div>
-              <video
-                width="300"
-                height="300"
-                autoPlay
-                muted
-                playsInline
-                loop
-                controls={false}
-                controlsList="nodownload"
-              >
-                <source src={example} type="video/mp4" />
-              </video>
-            </div>
-            {/* <span className="chunks"></span>
-          <span className="chunks2"></span>
-          <span className="chunks3"></span>
-          <span className="chunks4"></span>
-          <span className="border-bold">
-            <span className="logo-shadow"></span>
-          </span> */}
-          {/* <img src={logo} alt="Live Vegas" className="logo-live" /> */}
-        {/* <Loading /> */}
+        <span className="cut-wrapper">
+          <div class="circle-container">
+            <span className="chunks"></span>
+            <span className="insideCutter"></span>
+            <span className="border-bold"></span>
+          </div>
+          <img src={logo} alt="Live Vegas" className="logo-live" />
+        </span>
       </div>
     </>
   );
