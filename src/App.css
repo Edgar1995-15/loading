@@ -20,7 +20,7 @@ body {
 .border-bold {
   position: absolute;
   background-image: url("./assets/shadow.svg");
-  animation: rotate 6s linear infinite;
+  animation: rotate 4.5s linear infinite;
   background-size: contain;
   width: inherit;
   height: inherit;
@@ -45,16 +45,18 @@ body {
   background-size: contain;
   position: absolute;
   z-index: 2;
-  animation: rotate 6s linear infinite;
-  clip-path: polygon(50% 44.43%, 75% 38.3%, 100% 18.87%, 100% 28.73%, 100% 70%, 81% 95%, 50% 100%, 18% 95%, 0% 70%, 0% 28.73%, 0% 18.87%, 25% 38.3%);
+  animation: rotate 4.5s linear infinite;
+  /* clip-path: polygon(50% 38.62%, 75.76% 35%, 100% 28.65%, 100% 35%, 100% 70%, 81% 95%, 50% 100%, 18% 95%, 0% 70%, 0% 35%, 0% 28.65%, 24.54% 35%); */
+  mask-image: linear-gradient(to bottom, transparent 35%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 50%);
 }
+
 .shadow-example {
   position: absolute;
   background-image: url("./assets/black.svg");
   width: 85%;
   height: 85%;
   background-size: cover;
-  animation: rotate 6s linear infinite;
+  animation: rotate 4.5s linear infinite;
 }
 .chunks {
   position: absolute;
@@ -66,7 +68,7 @@ body {
   background-image: url("./assets/smallItems.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  animation: rotate_chunks 100s linear infinite, dot_pulse linear 6s infinite;
+  animation: rotate_chunks 90s linear infinite, dot_pulse linear 4.5s infinite, fade_chunks 4.5s forwards infinite;
 }
 .chunks2 {
   position: absolute;
@@ -108,3 +110,20 @@ body {
     transform: rotate(0deg);
   }
 }
+/* @keyframes fade_chunks {
+  0% {
+    opacity: 0; 
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.50;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1; 
+  }
+} */
