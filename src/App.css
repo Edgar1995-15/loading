@@ -10,6 +10,7 @@ body {
   width: 300px;
   height: 300px;
   position: absolute;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -46,7 +47,12 @@ body {
   position: absolute;
   z-index: 2;
   animation: rotate 4.5s linear infinite;
-  mask-image: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 1) 50%);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 15%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 1) 50%
+  );
 }
 
 .shadow-example {
@@ -67,7 +73,8 @@ body {
   background-image: url("./assets/smallItems.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  animation: rotate_chunks 90s linear infinite, dot_pulse linear 4.5s infinite, fade_chunks 4.5s forwards infinite;
+  animation: rotate_chunks 90s linear infinite, dot_pulse linear 4.5s infinite,
+    fade_chunks 4.5s forwards infinite;
 }
 .chunks2 {
   position: absolute;
@@ -82,8 +89,8 @@ body {
 }
 
 .cut-wrapper {
-  width: 270px;
-  height: 270px;
+  width: 280px;
+  height: 280px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,20 +116,3 @@ body {
     transform: rotate(0deg);
   }
 }
-/* @keyframes fade_chunks {
-  0% {
-    opacity: 0; 
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.50;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1; 
-  }
-} */
