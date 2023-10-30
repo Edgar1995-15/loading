@@ -47,7 +47,7 @@ body {
   z-index: 2;
   opacity: 0.8;
   animation: rotate 3s linear infinite;
-  clip-path: polygon(50% 35%, 75% 30.27%, 100% 25.54%, 100% 35%, 100% 70%, 81% 95%, 50% 100%, 18% 95%, 0% 70%, 0% 35%, 0% 23.5%, 25% 29.25%);
+  clip-path: polygon(50% 35%, 75% 30.27%, 100% 12.75%, 100% 35%, 100% 70%, 81% 95%, 50% 100%, 18% 95%, 0% 70%, 0% 35%, 0% 12.75%, 25% 29.25%);
 }
 .shadow-example {
   position: absolute;
