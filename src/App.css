@@ -46,8 +46,7 @@ body {
   position: absolute;
   z-index: 2;
   animation: rotate 4.5s linear infinite;
-  /* clip-path: polygon(50% 38.62%, 75.76% 35%, 100% 28.65%, 100% 35%, 100% 70%, 81% 95%, 50% 100%, 18% 95%, 0% 70%, 0% 35%, 0% 28.65%, 24.54% 35%); */
-  mask-image: linear-gradient(to bottom, transparent 35%, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 50%);
+  mask-image: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 1) 50%);
 }
 
 .shadow-example {
